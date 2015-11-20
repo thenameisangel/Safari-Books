@@ -1,0 +1,138 @@
+﻿@model SafariBooks.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Book</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorFName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorFName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorLName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorLName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AvgRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AvgRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InStock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InStock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSold)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSold)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublicationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SellingPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SellingPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Supplier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supplier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InventoryOnHand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryOnHand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReorderPoint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReorderPoint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NeedToOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NeedToOrder)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BookID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
